@@ -2,10 +2,9 @@
 
 userApp.component('userList', {
 
-    controller: function UserListCtrl(UsersService) {
+    controller: function UserListCtrl($scope, UsersService) {
 
         this.users = UsersService.query();
-
     },
 
     templateUrl: './src/UserList/UserList.html'
